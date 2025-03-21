@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #016aa1;
+  --secondary-color: #e4e7eb;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main-title {
+  text-align: center;
+  color: var(--primary-color) !important;
+  margin-bottom: 2rem !important;
+}
+
+.department-card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.department-card .ant-card-head {
+  background: var(--primary-color);
+  border-radius: 8px 8px 0 0;
+}
+
+.department-card .ant-card-head-title h3 {
+  color: white !important;
+  margin: 0;
+}
+
+.department-header {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.gender-tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hair-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hair-colors .ant-tag {
+  border: 1px solid black;
+
+  &.text-color-black{
+    color:rgb(87, 87, 87);
+  }
+}
+
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+/* Ant Design theme overrides */
+.ant-tag {
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--secondary-color) !important;
+}
+
+.ant-divider {
+  border-color: var(--secondary-color);
+}
